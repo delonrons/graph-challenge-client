@@ -13,8 +13,10 @@ yarn install
 ```
 yarn test
 ```
+Mock ids available for calculation : 1, 5555, 77777, 9999999999
 
-Note: The unit test coverage is less
+The graphql server is accessible at https://db-graph-client.herokuapp.com/
+
 
 ### How to run the application
 

@@ -42,7 +42,7 @@ function App() {
     <article
       className="container mx-auto md:max-w-4xl sm:px-4 sm:py-8"
      >
-      <motion.div
+      <motion.section
         className="grid grid-cols-1 sm:grid-cols-2 bg-primary-light "
         variants={container}
         initial="hidden"
@@ -78,6 +78,7 @@ function App() {
                 buttonText="Calculate"
                 type="primary"
                 disabled={hasError || !value}
+                isLoading={loading}
                 onClick={() => { calculate({ variables: { id: value } });  setShowModal(true);} }
               />
             </div>
@@ -91,7 +92,7 @@ function App() {
             </div>
           </div>
         </motion.div>
-      </motion.div>
+      </motion.section>
 
       { called && !loading && showModal &&
           <Modal

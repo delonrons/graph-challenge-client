@@ -7,7 +7,7 @@ const Modal = ({type, message, title, handleClose}) => {
       <div className="absolute w-full h-full bg-secondary opacity-50" onClick={handleClose}/>
       <AnimatePresence>
         <motion.div
-          className="bg-white sm:w-1/2 z-10 rounded-sm"
+          className="bg-white sm:w-1/3 z-10 rounded-sm"
           animate={{
             scale: [0, 1],
             duration: .1,

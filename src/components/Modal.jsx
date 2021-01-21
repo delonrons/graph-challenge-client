@@ -4,10 +4,10 @@ import { motion, AnimatePresence} from 'framer-motion';
 const Modal = ({type, message, title, handleClose}) => {
   return (
     <div className="flex items-center justify-center fixed left-0 bottom-0 w-full h-full p-5">
-      <div className="absolute w-full h-full bg-gray-900 opacity-50" onClick={handleClose}/>
+      <div className="absolute w-full h-full bg-secondary opacity-50" onClick={handleClose}/>
       <AnimatePresence>
         <motion.div
-          className="bg-white sm:w-1/2 z-10"
+          className="bg-white sm:w-1/2 z-10 rounded-sm"
           animate={{
             scale: [0, 1],
             duration: .1,
